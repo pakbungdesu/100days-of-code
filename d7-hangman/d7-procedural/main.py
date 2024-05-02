@@ -10,10 +10,7 @@ print("\nNote: Even if one letter has many positions, you can guess in one time"
 chosen_word = random.choice(word_list)
 
 # RANDOM LETTERS
-letters = []
-for letter in chosen_word:
-  letters.append(letter)
-
+letters = [letter for letter in chosen_word]
 rand_letters = random.choices(letters, k = round(0.25*len(letters)))
 letters_index = [index for (index, item) in enumerate(letters) if item in rand_letters]
 
