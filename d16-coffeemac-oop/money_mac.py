@@ -1,5 +1,5 @@
 
-class MoneyMachine():
+class MoneyMachine:
   def __init__(self):
     self.profit = 0
 
