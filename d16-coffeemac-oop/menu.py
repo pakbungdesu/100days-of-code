@@ -1,5 +1,5 @@
 
-class MenuItem():
+class MenuItem:
   def __init__(self, name, water, milk, coffee, cost):
       self.name = name
       self.cost = cost
@@ -8,7 +8,7 @@ class MenuItem():
                           "coffee": coffee,
                          }
 
-class Menu():
+class Menu:
   def __init__(self):
       self.menu = [
           MenuItem(name="latte", 
