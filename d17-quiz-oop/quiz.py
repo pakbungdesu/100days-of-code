@@ -13,8 +13,8 @@ class QuizBrain:
 
   def current_question(self):
     # question
-    current_q = self.question_list[self.question_number]
-    print(f"Q.{self.question_number} : {current_q.text} (True/False)")
+    current_q = self.question_list[self.question_number - 1]
+    print(f"\nQ.{self.question_number} : {current_q.text} (True/False)")
     user_input = str(input("Your answer: ")).lower()
     self.check_ans(user_input, current_q.answer.lower()) # here is important
 
