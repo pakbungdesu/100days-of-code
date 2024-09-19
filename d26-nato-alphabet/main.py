@@ -10,8 +10,7 @@ for (index, row) in file.iterrows():
 
 
 while True:
-    word = input("Enter a word: ")
-    word = word.upper()
+    word = input("Enter a word: ").upper()
 
     if word == "EXIT":
         break
